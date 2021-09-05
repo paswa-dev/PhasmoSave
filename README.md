@@ -2,7 +2,7 @@
 PhasmoSave integration for automatic PhasmoSave process!
 
 ### In order to run follow instructions.
-
+> Download this as .zip
 > 1. Download Python 3+. [Download](https://www.python.org/downloads/)
 > 2. Run 'python' in command prompt to make sure python is there.
 > 3. Run  `Create.py`
