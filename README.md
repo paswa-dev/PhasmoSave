@@ -3,9 +3,13 @@ PhasmoSave integration for automatic PhasmoSave process!
 
 ### In order to run follow instructions.
 
-1. Run  `Create.py`
-2. Run  `Edit.py`
-##### Will take 2 minutes but be patient!
+> 1. Run  `Create.py`
+> 2. Run  `Edit.py`
+------
+### How quick is the process? 
+Edit.py will go through everything in file so does take about a minute to complete.
+
+-----
 
 ### Future Updates
 - [x] Create a way to edit stats
@@ -13,4 +17,5 @@ PhasmoSave integration for automatic PhasmoSave process!
 - [ ] Create Graphical User Interfact(GUI)
 - [ ] Recruit contributtors
 
-## All set!
+## All set! Thanks for downloading!
+### Credits to Phasmosave.com
