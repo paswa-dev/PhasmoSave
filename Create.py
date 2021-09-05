@@ -1,10 +1,20 @@
 from getpass import getpass
 import urllib.request 
+from colorama import init
+init()
+from colorama import Fore, Back, Style
 
 
 import os
 import sys
+
+os.system('pip install requests')
+os.system('pip install PySimpleGui')
+
 import requests
+
+
+
 
 area = os.getcwd()
 print(area)
@@ -27,6 +37,11 @@ from time import sleep
 import subprocess
 import getpass
 user = getpass.getuser()
+
+
+print('This message is only appearing for 4 seconds. Please make sure lastest verison of Python is installed!')
+print('This doesnt mean u have the wrong version btw this is just a to notify people')
+sleep(4)
 
 
 url = 'https://phasmosave.com/saveData.txt'
@@ -78,7 +93,17 @@ print('Checking file is there....')
 
 if os.path.exists(joinedFile):
     print('Success!')
+    print('You may now continue')
+    print('')
+    print('')
+    print('')
+    print(Fore.MAGENTA + 'Please press enter!')
+    print('')
+    print('')
+    print('')
+    print(Style.RESET_ALL)
     subprocess.call([file])
+    os.system('python Edit.py')
 
 else: 
     print('Failed?')
