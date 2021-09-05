@@ -20,18 +20,40 @@ from colorama import Fore, Back, Style
 
 
 sg.theme('DarkAmber')
-sg.set_options()
 
 layout = [
-    [sg.Text('Please enter stats')],
-    [sg.Text('Level', size =(15, 1)), sg.InputText()],
-    [sg.Text('Money', size =(15, 1)), sg.InputText()]
+    [sg.Text('Stats')],
+    [sg.Text('Level', size =(20, 1)), sg.InputText()],
+    [sg.Text('Money', size =(20, 1)), sg.InputText()]
 
 ]
 
 layout2 =[
-    [sg.Text('Please enter item stats')],
-    [sg.Text('Item Amounts', size=(15,1)), sg.InputText()]
+    [sg.Text('Items')],
+    [sg.Column([
+    [sg.Text('EMF Reader', size=(20,1)), sg.InputText()],
+    [sg.Text('Flashlight', size=(20,1)), sg.InputText()],
+    [sg.Text('Photo Camera', size=(20,1)), sg.InputText()],
+    [sg.Text('Lighter', size=(20,1)), sg.InputText()],
+    [sg.Text('Candle', size=(20,1)), sg.InputText()],
+    [sg.Text('UV Light', size=(20,1)), sg.InputText()],
+    [sg.Text('Crucifx', size=(20,1)), sg.InputText()],
+    [sg.Text('Video Camera', size=(20,1)), sg.InputText()],
+    [sg.Text('Spirit Box', size=(20,1)), sg.InputText()],
+    [sg.Text('Salt', size=(20,1)), sg.InputText()],
+    [sg.Text('Smudge Sticks', size=(20,1)), sg.InputText()],
+    [sg.Text('Tripod', size=(20,1)), sg.InputText()],
+    [sg.Text('Strong Flashlight', size=(20,1)), sg.InputText()],
+    [sg.Text('Motion Sensor', size=(20,1)), sg.InputText()],
+    [sg.Text('Sound Sensor', size=(20,1)), sg.InputText()],
+    [sg.Text('Thermometer', size=(20,1)), sg.InputText()],
+    [sg.Text('Sanity Pills', size=(20,1)), sg.InputText()],
+    [sg.Text('Ghost Writing Book', size=(20,1)), sg.InputText()],
+    [sg.Text('Infared Light Sensor', size=(20,1)), sg.InputText()],
+    [sg.Text('Parabolic Microphone', size=(20,1)), sg.InputText()],
+    [sg.Text('Glowstick', size=(20,1)), sg.InputText()],
+    [sg.Text('Head Mounted Camera', size=(20,1)), sg.InputText()],
+    ])]
 
 ]
 
@@ -40,7 +62,7 @@ tab_manager = [
         [sg.Tab('Main Stats', layout, title_color='Red',border_width=10,tooltip='Main Stats', element_justification= 'center')],
         [sg.Tab('Item Stats', layout2, title_color='Red',border_width=10,tooltip='Item Stats')]
     ],
-    border_width=5
+    border_width=8
     ),
     sg.Button('Submit')
     ]]
@@ -68,7 +90,8 @@ def workStart():
 
     
 
-    window = sg.Window('PhasmoSave : Paswa',tab_manager, icon=r'asset/icon.ico' )
+    window = sg.Window('PhasmoSave : Paswa',tab_manager, icon=r'asset/icon.ico').finalize()
+    
     event, values = window.read()
     window.close()
     
@@ -86,8 +109,64 @@ def workStart():
                 _number['Value'] = Xp
             if Name == 'PlayersMoney':
                 _number['Value'] = values[1]
-            if Name.__contains__('Inventory'):
+            if Name == 'EMFReaderInventory':
                 _number["Value"] = values[2]
+            if Name == 'FlashlightInventory':
+                _number["Value"] = values[3]
+            if Name == 'CameraInventory':
+                _number["Value"] = values[4]
+            if Name == 'CameraNnventory':
+                _number["Value"] = values[4]
+            if Name == 'KighterInventory':
+                _number["Value"] = values[5]
+            if Name == 'LighterInventory':
+                _number["Value"] = values[5]
+            if Name == 'CandleInventory':
+                _number["Value"] = values[6]
+            if Name == 'UVFlashlightInventory':
+                _number["Value"] = values[7]
+            if Name == 'CrucifixInventory':
+                _number["Value"] = values[8]
+            if Name == 'DSLRCameraInventory':
+                _number["Value"] = values[9]
+            if Name == 'EVPrecorderInventory':
+                _number["Value"] = values[10]
+            if Name == 'EVPRecorderInventory':
+                _number["Value"] = values[10]
+            if Name == 'Saltinventory':
+                _number["Value"] = values[11]
+            if Name == 'SaltInventory':
+                _number["Value"] = values[11]
+            if Name == 'sageInventory':
+                _number["Value"] = values[12]
+            if Name == 'SageInventory':
+                _number["Value"] = values[12]
+            if Name == 'TripodInventory':
+                _number["Value"] = values[13]
+            if Name == 'StrongFlashlightInventory':
+                _number["Value"] = values[14]
+            if Name == 'MotionSensorInventory':
+                _number["Value"] = values[15]
+            if Name == 'SoundSensorInventory':
+                _number["Value"] = values[16]
+            if Name == 'SanityPillsInventory':
+                _number["Value"] = values[17]
+            if Name == 'ThermometerInventory':
+                _number["Value"] = values[18]
+            if Name == 'GhostWritingBookInventory':
+                _number["Value"] = values[19]
+            if Name == 'IRLightSensorInventory':
+                _number["Value"] = values[20]
+            if Name == 'ParabolicMicrophoneInventory':
+                _number["Value"] = values[21]
+            if Name == 'GlowstickInventory':
+                _number["Value"] = values[22]
+            if Name == 'HeadmountedCameraInventory':
+                _number["Value"] = values[23]
+            if Name == 'HeadMountedCameraInventory':
+                _number["Value"] = values[23]
+            #-------
+            #-------    
             if Name == 'istutorial':
                 _number['Value'] = 0
             if Name == 'isTutorial':
