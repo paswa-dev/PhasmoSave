@@ -19,6 +19,7 @@ def workStart():
     print('Below is the list of items. Change accordingly.')
     with open(f"C:\\Users\\{user}\\AppData\\LocalLow\\Kinetic Games\\Phasmophobia\\saveData.txt", "r", encoding="utf-8") as f3:
         data = json.load(f3)
+        
     print('')
     print('')
     print('If not sure of something CHECK Current stuff above')
