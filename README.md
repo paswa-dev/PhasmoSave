@@ -18,4 +18,4 @@ Edit.py will go through everything in file so does take about a minute to comple
 - [ ] Recruit contributtors
 
 ## All set! Thanks for downloading!
-### Credits to [Phasmosave.com](https://www.phasmosave.com)
+### Credits to [Phasmosave.com](https://phasmosave.com/)
