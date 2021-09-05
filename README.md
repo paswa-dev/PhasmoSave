@@ -9,7 +9,7 @@ PhasmoSave integration for automatic PhasmoSave process!
 > 4. Finished!
 ------
 ### How quick is the process? 
-Edit.py will go through everything in file so does take about a minute to complete.
+Super quick
 
 -----
 
