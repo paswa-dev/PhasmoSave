@@ -4,8 +4,9 @@ PhasmoSave integration for automatic PhasmoSave process!
 ### In order to run follow instructions.
 
 > 1. Download Python 3+. [Download](https://www.python.org/downloads/)
-> 2. Run  `Create.py`
-> 3. Finished!
+> 2. Run 'python' in command prompt to make sure python is there.
+> 3. Run  `Create.py`
+> 4. Finished!
 ------
 ### How quick is the process? 
 Edit.py will go through everything in file so does take about a minute to complete.
