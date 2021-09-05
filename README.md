@@ -14,8 +14,8 @@ Edit.py will go through everything in file so does take about a minute to comple
 
 ### Future Updates
 - [x] Create a way to edit stats
-- [ ] Add a way to pick what stats to edit
-- [ ] Create Graphical User Interfact(GUI)
+- [x] Add a way to pick what stats to edit
+- [x] Create Graphical User Interfact(GUI)
 - [ ] Recruit contributtors
 
 ## All set! Thanks for downloading!
