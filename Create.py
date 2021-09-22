@@ -55,8 +55,14 @@ print('This may take some time. Please be patient')
 
 searchFile('saveData.txt')
 
-joinedFile = asset.Finder.filePATH
-fileArea = os.path.dirname(asset.Finder.filePATH)
+joinedFile = ''
+fileArea = ''
+try:
+	joinedFile = asset.Finder.filePATH
+	fileArea = os.path.dirname(asset.Finder.filePATH)
+except AttributeError:
+	print('File path was not found. Is phasmophobia installed?')
+	exit(1)
 
 delete1 = os.path.join(fileArea, fileName2)
 delete2 = os.path.join(fileArea, fileName3)
@@ -84,9 +90,12 @@ else:
 
 r = requests.get(url)
 full = r.content
-
-with open(joinedFile, 'wb') as f:
-    f.write(full)
+try:
+	with open(joinedFile, 'wb') as f:
+		f.write(full)
+except FileNotFoundError:
+	print('File not found.')
+	exit(1)
 
 print(f'Wrote file into {fileArea}')
 print('Checking file is there....')
